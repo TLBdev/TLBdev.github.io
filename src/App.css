@@ -18,15 +18,18 @@ h1 {
 h2 {
   font-size: 1.7vw;
 }
+p {
+  font-size: 1.3vw;
+}
 .App-header {
-  background-color: #282c34;
+  background-image: linear-gradient(to bottom right, #2D383A, #676767);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 1rem;
-  color: lightgray;
+  color: rgb(58, 196, 4);
 }
 
 .App-link {
@@ -44,7 +47,11 @@ h2 {
 .main {
   display: flex;
   flex-direction: row;
-  height: 70vh
+  height: 80vh;
+  
+}
+.align-down {
+  padding-top: 8vh
 }
 .content-cont{
   display: flex;
@@ -73,6 +80,7 @@ h2 {
   border-right: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   border-top: 1px solid lightgray;
+  
   height: 10vh;
   width: 49%;
 }
@@ -90,59 +98,33 @@ h2 {
 }
 
 .button-left {
-  border: 1px solid lightgray;
+  border: 2px solid #757575;
   border-bottom-left-radius: 11% 50%;
   border-top-left-radius: 11% 50%;
   padding: 1%;
   width: 10vw;
-  
-  font-size: 1rem;
+  background-color: rgba(53, 56, 57, .5);
+  font-size: 1.8vw;
   cursor: crosshair;
 }
-.button-left-selected {
-  border: 1px solid lightgray;
-  border-bottom-left-radius: 11% 50%;
-  border-top-left-radius: 11% 50%;
-  padding: 1%;
-  width: 10vw;
-  background-color: lightgray;
-  color: #282c34;
-  font-size: 1rem;
-  cursor: crosshair;
-}
+
 .button-mid {
-  border: 1px solid lightgray;
-  font-size: 1rem;
+  background-color: rgba(53, 56, 57, .5);
+  border: 2px solid #757575;
+  font-size: 1.8vw;
   padding: 1%;
   width: 10vw;
   cursor: crosshair;
 }
-.button-mid-selected {
-  border: 1px solid lightgray;
-  font-size: 1rem;
-  padding: 1%;
-  width: 10vw;
-  cursor: crosshair;
-  background-color: lightgray;
-  color: #282c34;
-}
+
 .button-right {
-  border: 1px solid lightgray;
+  background-color: rgba(53, 56, 57, .5);
+  border: 2px solid #757575;
   border-bottom-right-radius: 11% 50%;
   border-top-right-radius: 11% 50%;
-  font-size: 1rem;
+  font-size: 1.8vw;
   padding: 1%;
   width: 10vw;
   cursor: crosshair;  
 }
-.button-right-selected {
-  border: 1px solid lightgray;
-  border-bottom-right-radius: 11% 50%;
-  border-top-right-radius: 11% 50%;
-  font-size: 1rem;
-  padding: 1%;
-  width: 10vw;
-  cursor: crosshair;
-  background-color: lightgray;
-  color: #282c34;  
-}
+

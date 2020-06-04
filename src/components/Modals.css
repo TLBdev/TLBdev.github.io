@@ -1,0 +1,33 @@
+.modal-background {
+    
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    border: 3px solid #757575;
+    border-radius: 5%;
+    height: 70vh;
+    width: 40vw;
+    background-color: rgba(53, 56, 57, .5);
+    padding: 4%
+  }
+  .title-bar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    height: 3vw;
+  }
+  .close {
+    width: 5vh;
+    cursor: crosshair;
+    
+
+  }
+  .skills {
+    text-align: left;
+  }

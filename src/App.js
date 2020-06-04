@@ -9,9 +9,13 @@ import Skills from './components/Skills'
 function App() {
   const [modals, setModals] = useState({
     aboutMeModal: false,
-    skillsModal: true,
+    skillsModal: false,
     projectsModal: false
   })
+
+  function stopPropagation(e) {
+    e.stopPropagation()
+  }
 
   function toggleMain(e) {
     e.preventDefault()
@@ -25,7 +29,7 @@ function App() {
   function toggleAbout(e) {
     e.preventDefault()
     setModals({
-      aboutMeModal: true,
+      aboutMeModal: !modals.aboutMeModal,
       skillsModal: false,
       projectsModal: false
     })
@@ -35,7 +39,7 @@ function App() {
     e.preventDefault()
     setModals({
       aboutMeModal: false,
-      skillsModal: true,
+      skillsModal: !modals.skillsModal,
       projectsModal: false
     })
   }
@@ -45,7 +49,7 @@ function App() {
     setModals({
       aboutMeModal: false,
       skillsModal: false,
-      projectsModal: true
+      projectsModal: !modals.projectsModal
     })
   }
 
@@ -53,20 +57,20 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="main">
-          <Main />
+          {!modals.projectsModal && !modals.skillsModal && !modals.aboutMeModal ? <Main /> : null}
+          {modals.projectsModal ? <Projects toggleMain={toggleMain} stopPropagation={stopPropagation} /> : null}
+          {modals.skillsModal ? <Skills toggleMain={toggleMain} stopPropagation={stopPropagation} /> : null}
+          {modals.aboutMeModal ? <AboutMe toggleMain={toggleMain} stopPropagation={stopPropagation} /> : null}
+        </div>
+        {!modals.projectsModal && !modals.skillsModal && !modals.aboutMeModal ?
+          <div className="button-cont">
+            <div onClick={toggleAbout} name='aboutMeModal' className='button-left'>About Me</div>
+            <div onClick={toggleSkills} name='skillsModal' className='button-mid'>Skills</div>
+            <div onClick={toggleProjects} name='projectsModal' className='button-right'>Projects</div>
+          </div>
+          : null}
 
-        </div>
-        <div className="button-cont">
-          <div
-            onClick={toggleMain}
-            name='Main'
-            className={modals && !modals.aboutMeModal && !modals.skillsModal && !modals.projectsModal ?
-              'button-left-selected'
-              : 'button-left'}>Main</div>
-          <div onClick={toggleAbout} name='aboutMeModal' className={modals && modals.aboutMeModal ? 'button-mid-selected' : 'button-mid'}>About Me</div>
-          <div onClick={toggleSkills} name='skillsModal' className={modals && modals.skillsModal ? 'button-mid-selected' : 'button-mid'}>Skills</div>
-          <div onClick={toggleProjects} name='projectsModal' className={modals && modals.projectsModal ? 'button-right-selected' : 'button-right'}>Projects</div>
-        </div>
+
       </header>
     </div>
   );

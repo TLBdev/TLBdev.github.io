@@ -4,7 +4,8 @@ function Main() {
     return (
         <div className="content-cont">
             {/* <div className="sym"><p>{'</>'}</p></div> */}
-            <h1>Tony Burch</h1>
+
+            <h1 className='align-down'>Tony Burch</h1>
             <div className='line-cont'>
                 <div className='borderRightBot'></div><div className='borderLeftBot'></div>
             </div>
