@@ -10,6 +10,7 @@ function Main() {
                 <div className='borderRightBot'></div><div className='borderLeftBot'></div>
             </div>
             <h2>Full Stack Web Developer</h2>
+            <h2>tlb.dev@gmx.com</h2>
 
             <div className='borderLeftTop'></div><span className='borderRightTop'></span>
         </div>

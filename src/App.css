@@ -6,11 +6,16 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+@media screen and (orientation: portrait) {
+  
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+a {
+  color: #61dafb
 }
 h1 {
   font-size: 1.8vw;
@@ -128,3 +133,100 @@ p {
   cursor: crosshair;  
 }
 
+@media screen and (orientation: portrait) {
+  a {
+    color: #61dafb
+  }
+  h1 {
+    font-size: 5.8vw;
+  }
+  h2 {
+    font-size: 4.7vw;
+  }
+  p {
+    font-size: 3.2vw;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    
+  }
+  .align-down {
+    padding-top: 8vh
+  }
+  .content-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sym {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid lightgray
+  }
+  
+  .line-cont {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+  }
+  
+  .borderRightBot {
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    
+    height: 10vh;
+    width: 49%;
+  }
+  .borderLeftBot {
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    height: 10vh;
+    width: 49%;
+  }
+  .button-cont {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+  }
+  
+  .button-left {
+    border: 2px solid #757575;
+    border-bottom-left-radius: 11% 50%;
+    border-top-left-radius: 11% 50%;
+    padding: 1%;
+    width: 20vw;
+    background-color: rgba(53, 56, 57, .5);
+    font-size: 3.8vw;
+    cursor: crosshair;
+  }
+  
+  .button-mid {
+    background-color: rgba(53, 56, 57, .5);
+    border: 2px solid #757575;
+    font-size: 3.8vw;
+    padding: 1%;
+    width: 20vw;
+    cursor: crosshair;
+  }
+  
+  .button-right {
+    background-color: rgba(53, 56, 57, .5);
+    border: 2px solid #757575;
+    border-bottom-right-radius: 11% 50%;
+    border-top-right-radius: 11% 50%;
+    font-size: 3.8vw;
+    padding: 1%;
+    width: 20vw;
+    cursor: crosshair;  
+  }
+}

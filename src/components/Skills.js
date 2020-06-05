@@ -12,7 +12,7 @@ function Skills(props) {
                         <h2>X</h2>
                     </div>
                 </div>
-                <div className='skills'>
+                <div className='content'>
                     <p>> Programming Languages:</p>
                     <p> Python  |   JS</p>
                     <p></p>
