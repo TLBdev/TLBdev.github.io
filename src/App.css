@@ -15,7 +15,8 @@
   }
 }
 a {
-  color: #61dafb
+  color: #61dafb;
+  cursor: crosshair
 }
 h1 {
   font-size: 1.8vw;
@@ -39,6 +40,7 @@ p {
 
 .App-link {
   color: #61dafb;
+  cursor: crosshair
 }
 
 @keyframes App-logo-spin {
@@ -135,7 +137,8 @@ p {
 
 @media screen and (orientation: portrait) {
   a {
-    color: #61dafb
+    color: #61dafb;
+    cursor: crosshair
   }
   h1 {
     font-size: 5.8vw;

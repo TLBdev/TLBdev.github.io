@@ -1,3 +1,5 @@
+Master Branch contains compiled code, for React source code look at working-branch.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

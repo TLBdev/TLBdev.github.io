@@ -1,5 +1,30 @@
-.modal-background {
+@keyframes expand {
+  from {height: 0vh; width: 0vw}
+  to {height: 70vh; width: 40vw}
+}
+@keyframes expandMobile {
+  from {height: 0vh; width: 0vw}
+  to {height: 80vh; width: 80vw;}
+}
+@keyframes texthide {
+  from {color: rgba(58, 196, 4, .01); overflow: hidden;}
+  to {color: rgba(58, 196, 4, 1); overflow: auto;}
+}
+@keyframes linkhide {
+  from {color: rgba(97, 218, 251, .01)}
+  to {color: rgba(97, 218, 251, 1)}
+}
+
+a {
+  animation-name: linkhide;
+    animation-duration: .4s;
+    animation-delay: 2.1s;
+    animation-fill-mode: both;
     
+}
+
+.modal-background {
+  
     height: 80vh;
     width: 80vw;
     display: flex;
@@ -8,6 +33,8 @@
   }
   
   .modal {
+    animation-name: expand;
+    animation-duration: 2.1s;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -24,6 +51,11 @@
     justify-content: space-between;
     height: 3vw;
     padding-bottom: 3%;
+    animation-name: texthide;
+    animation-duration: .4s;
+    animation-delay: 2.1s;
+    animation-fill-mode: both;
+    
   }
   .close {
     
@@ -34,7 +66,12 @@
   .content {
     text-align: left;
     overflow-y: auto;
-    height: 90%
+    height: 90%;
+    animation-name: texthide;
+    animation-duration: .4s;
+    animation-delay: 2.1s;
+    animation-fill-mode: both;
+    
   }
   
   .line-break {
@@ -55,6 +92,8 @@
     }
     
     .modal {
+      animation-name: expandMobile;
+      animation-duration: 2.1s;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
