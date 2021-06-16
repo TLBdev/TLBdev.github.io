@@ -49,12 +49,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 3vw;
-    padding-bottom: 3%;
+    max-height: 8vh;
+    
     animation-name: texthide;
     animation-duration: .4s;
     animation-delay: 2.1s;
     animation-fill-mode: both;
+    overflow-y: hidden !important;
+    
     
   }
   .close {

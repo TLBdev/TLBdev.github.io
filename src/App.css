@@ -57,6 +57,8 @@ p {
   height: 80vh;
   
 }
+
+
 .align-down {
   padding-top: 8vh
 }
@@ -134,6 +136,7 @@ p {
   width: 10vw;
   cursor: crosshair;  
 }
+
 
 @media screen and (orientation: portrait) {
   a {
@@ -232,4 +235,14 @@ p {
     width: 20vw;
     cursor: crosshair;  
   }
+}
+
+::-webkit-scrollbar {
+  background-color: black;
+  border: 1px solid rgb(58, 196, 4);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(58, 196, 4);
+  border-radius: 5px;
 }
